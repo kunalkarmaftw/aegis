@@ -43,5 +43,15 @@
 
     "moduleResolution": "nodenext",
     "esModuleInterop": true,
-  }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts"
+  ]
+
 }
+
+// it tells the typescript to compile application source files, but dont compile test files into the production build
